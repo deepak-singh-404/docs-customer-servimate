@@ -204,3 +204,104 @@
 
 ```
 ===============================================================================================================
+**RESHCEDULE BOOKING**
+**URL** : `/dev/api/v1/rescheduleService/GtUTyR1iw`
+**Method** : `PUT`
+
+**Header** : `application/json`
+
+**Auth required** : NO
+
+**Permissions required** : None
+
+## Request Body 
+
+```json
+{
+    "customerId":"616684edf86e4100505b48a1",
+    "timeSlot":"06:30 PM  -  07:00 PM",
+    "serviceDate":"2021-10-18"
+}
+```
+## Success Response 
+
+**Code** : `200`
+
+**Response**
+
+```json
+{
+    "success": true,
+    "message": "Booking rescheduled successfully",
+    "response": {
+        "extraCharge": {
+            "type": "hygenic",
+            "amount": 25
+        },
+        "services": [
+            {
+                "quantity": 1,
+                "createdAt": "2021-10-13T09:54:08.830Z",
+                "_id": "6166acc06173010045066919",
+                "serviceCategory": "610bbcb4d5a9ca0039f4f1d0",
+                "serviceId": "613cdff32f6d8a004c985459",
+                "serviceName": "Advance Hair cut & Blow Dry",
+                "actualPrice": 649,
+                "discountedPrice": 539
+            },
+            {
+                "quantity": 1,
+                "createdAt": "2021-10-13T09:54:05.371Z",
+                "_id": "6166acbd2c1be5002ff105d7",
+                "serviceCategory": "610bbcb4d5a9ca0039f4f1d0",
+                "serviceId": "613cdfca744f2d0062a6de61",
+                "serviceName": "Basic Hair Cut & Blow Dry",
+                "actualPrice": 799,
+                "discountedPrice": 399
+            },
+            {
+                "quantity": 1,
+                "createdAt": "2021-10-13T09:54:02.511Z",
+                "_id": "6166acba7d311e0028de1d90",
+                "serviceCategory": "610bbcb4d5a9ca0039f4f1d0",
+                "serviceId": "613cdf9500c8ad002f1da4b2",
+                "serviceName": "Trimming",
+                "actualPrice": 160,
+                "discountedPrice": 119
+            }
+        ],
+        "isServiceProviderAssigned": false,
+        "isJobDone": false,
+        "isRequestedToCancelService": false,
+        "rating": 0,
+        "isCancelled": false,
+        "isAdminCancelledService": false,
+        "isAdminApprovedCancellationRequest": false,
+        "_id": "6166aeeb8a43e2005b548180",
+        "bookingId": "GtUTyR1iw",
+        "serviceCategoryId": "610bbcb4d5a9ca0039f4f1d0",
+        "customerId": "616684edf86e4100505b48a1",
+        "customerName": "Deepak singh",
+        "address": {
+            "name": "Deepak Singh",
+            "address": "Tower A, 401",
+            "phoneNumber": "9415332242",
+            "zipcode": 201305,
+            "city": "Gautam Buddha Nagar",
+            "state": "Uttar Pradesh"
+        },
+        "modeOfPayment": "COD",
+        "isPaid": false,
+        "timeSlot": "06:30 PM  -  07:00 PM",
+        "serviceDate": "2021-10-18",
+        "finalPrice": 1049,
+        "cartAmount": 1053,
+        "timeOfBooking": "2021-10-13T10:03:23.359Z",
+        "createdAt": "2021-10-13T10:03:23.359Z",
+        "approvedAt": "2021-10-13T10:03:23.359Z",
+        "__v": 0
+    }
+}
+```
+
+===============================================================================================================
